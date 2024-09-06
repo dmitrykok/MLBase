@@ -1,0 +1,322 @@
+[
+    {
+        "label": "datasets",
+        "importPath": "sklearn",
+        "description": "sklearn",
+        "isExtraImport": true,
+        "detail": "sklearn",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "LogisticRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "LogisticRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "LinearRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "classification_report",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "confusion_matrix",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "r2_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "load_iris",
+        "importPath": "sklearn.datasets",
+        "description": "sklearn.datasets",
+        "isExtraImport": true,
+        "detail": "sklearn.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "iris",
+        "kind": 5,
+        "importPath": "l1",
+        "description": "l1",
+        "peekOfCode": "iris = datasets.load_iris()\nX = iris.data  # pylint: disable=no-member  # Признаки\ny = iris.target  # pylint: disable=no-member  # Метки классов\n# Разделение данных на обучающую и тестовую выборки\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, random_state=42\n)\n# Создание и обучение модели логистической регрессии\nmodel = LogisticRegression(max_iter=200)\nmodel.fit(X_train, y_train)",
+        "detail": "l1",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "l1",
+        "description": "l1",
+        "peekOfCode": "X = iris.data  # pylint: disable=no-member  # Признаки\ny = iris.target  # pylint: disable=no-member  # Метки классов\n# Разделение данных на обучающую и тестовую выборки\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, random_state=42\n)\n# Создание и обучение модели логистической регрессии\nmodel = LogisticRegression(max_iter=200)\nmodel.fit(X_train, y_train)\n# Прогнозирование и оценка точности",
+        "detail": "l1",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "l1",
+        "description": "l1",
+        "peekOfCode": "y = iris.target  # pylint: disable=no-member  # Метки классов\n# Разделение данных на обучающую и тестовую выборки\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, random_state=42\n)\n# Создание и обучение модели логистической регрессии\nmodel = LogisticRegression(max_iter=200)\nmodel.fit(X_train, y_train)\n# Прогнозирование и оценка точности\ny_pred = model.predict(X_test)",
+        "detail": "l1",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "l1",
+        "description": "l1",
+        "peekOfCode": "model = LogisticRegression(max_iter=200)\nmodel.fit(X_train, y_train)\n# Прогнозирование и оценка точности\ny_pred = model.predict(X_test)\naccuracy = accuracy_score(y_test, y_pred)\nprint(f\"Точность модели: {accuracy:.2f}\")",
+        "detail": "l1",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "l1",
+        "description": "l1",
+        "peekOfCode": "y_pred = model.predict(X_test)\naccuracy = accuracy_score(y_test, y_pred)\nprint(f\"Точность модели: {accuracy:.2f}\")",
+        "detail": "l1",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy",
+        "kind": 5,
+        "importPath": "l1",
+        "description": "l1",
+        "peekOfCode": "accuracy = accuracy_score(y_test, y_pred)\nprint(f\"Точность модели: {accuracy:.2f}\")",
+        "detail": "l1",
+        "documentation": {}
+    },
+    {
+        "label": "iris",
+        "kind": 5,
+        "importPath": "l2",
+        "description": "l2",
+        "peekOfCode": "iris = load_iris()\nX, y = iris.data, iris.target  # pylint: disable=no-member\n# Разделение данных на обучающую и тестовую выборки\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, random_state=42\n)\n# Создание и обучение модели логистической регрессии\nmodel = LogisticRegression(max_iter=200)\nmodel.fit(X_train, y_train)\n# Прогнозирование на тестовой выборке",
+        "detail": "l2",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "l2",
+        "description": "l2",
+        "peekOfCode": "model = LogisticRegression(max_iter=200)\nmodel.fit(X_train, y_train)\n# Прогнозирование на тестовой выборке\ny_pred = model.predict(X_test)\n# Оценка модели\nprint(\"Accuracy:\", accuracy_score(y_test, y_pred))\nprint(\"Classification Report:\\n\", classification_report(y_test, y_pred))\nprint(\"Confusion Matrix:\\n\", confusion_matrix(y_test, y_pred))",
+        "detail": "l2",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "l2",
+        "description": "l2",
+        "peekOfCode": "y_pred = model.predict(X_test)\n# Оценка модели\nprint(\"Accuracy:\", accuracy_score(y_test, y_pred))\nprint(\"Classification Report:\\n\", classification_report(y_test, y_pred))\nprint(\"Confusion Matrix:\\n\", confusion_matrix(y_test, y_pred))",
+        "detail": "l2",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "l3.1",
+        "description": "l3.1",
+        "peekOfCode": "X = 2 * np.random.rand(100, 1)\ny = 4 + 3 * X + np.random.randn(100, 1)\n# Создание модели линейной регрессии\nmodel = LinearRegression()\nmodel.fit(X, y)\n# Прогнозирование\ny_pred = model.predict(X)\n# Оценка модели\nmse = mean_squared_error(y, y_pred)\nr2 = r2_score(y, y_pred)",
+        "detail": "l3.1",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "l3.1",
+        "description": "l3.1",
+        "peekOfCode": "y = 4 + 3 * X + np.random.randn(100, 1)\n# Создание модели линейной регрессии\nmodel = LinearRegression()\nmodel.fit(X, y)\n# Прогнозирование\ny_pred = model.predict(X)\n# Оценка модели\nmse = mean_squared_error(y, y_pred)\nr2 = r2_score(y, y_pred)\nprint(\"Mean squared error:\", mse)",
+        "detail": "l3.1",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "l3.1",
+        "description": "l3.1",
+        "peekOfCode": "model = LinearRegression()\nmodel.fit(X, y)\n# Прогнозирование\ny_pred = model.predict(X)\n# Оценка модели\nmse = mean_squared_error(y, y_pred)\nr2 = r2_score(y, y_pred)\nprint(\"Mean squared error:\", mse)\nprint(\"R2 score:\", r2)\n# Визуализация данных и предсказаний",
+        "detail": "l3.1",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "l3.1",
+        "description": "l3.1",
+        "peekOfCode": "y_pred = model.predict(X)\n# Оценка модели\nmse = mean_squared_error(y, y_pred)\nr2 = r2_score(y, y_pred)\nprint(\"Mean squared error:\", mse)\nprint(\"R2 score:\", r2)\n# Визуализация данных и предсказаний\nplt.scatter(X, y, color=\"black\", label=\"Данные\")\nplt.plot(X, y_pred, color=\"blue\", linewidth=3, label=\"Линейная регрессия\")\nplt.xlabel(\"Признак X\")",
+        "detail": "l3.1",
+        "documentation": {}
+    },
+    {
+        "label": "mse",
+        "kind": 5,
+        "importPath": "l3.1",
+        "description": "l3.1",
+        "peekOfCode": "mse = mean_squared_error(y, y_pred)\nr2 = r2_score(y, y_pred)\nprint(\"Mean squared error:\", mse)\nprint(\"R2 score:\", r2)\n# Визуализация данных и предсказаний\nplt.scatter(X, y, color=\"black\", label=\"Данные\")\nplt.plot(X, y_pred, color=\"blue\", linewidth=3, label=\"Линейная регрессия\")\nplt.xlabel(\"Признак X\")\nplt.ylabel(\"Значение Y\")\nplt.title(\"Линейная регрессия: пример сгенерированных данных\")",
+        "detail": "l3.1",
+        "documentation": {}
+    },
+    {
+        "label": "r2",
+        "kind": 5,
+        "importPath": "l3.1",
+        "description": "l3.1",
+        "peekOfCode": "r2 = r2_score(y, y_pred)\nprint(\"Mean squared error:\", mse)\nprint(\"R2 score:\", r2)\n# Визуализация данных и предсказаний\nplt.scatter(X, y, color=\"black\", label=\"Данные\")\nplt.plot(X, y_pred, color=\"blue\", linewidth=3, label=\"Линейная регрессия\")\nplt.xlabel(\"Признак X\")\nplt.ylabel(\"Значение Y\")\nplt.title(\"Линейная регрессия: пример сгенерированных данных\")\nplt.legend()",
+        "detail": "l3.1",
+        "documentation": {}
+    },
+    {
+        "label": "gradient_descent",
+        "kind": 2,
+        "importPath": "l3.2",
+        "description": "l3.2",
+        "peekOfCode": "def gradient_descent(X, y, learning_rate=0.1, n_iterations=1000):\n    m = len(y)\n    X_b = np.c_[\n        np.ones((m, 1)), X\n    ]  # Добавление вектора единиц для свободного члена (bias term)\n    theta = np.random.randn(\n        2, 1\n    )  # Инициализация случайных значений для коэффициентов (theta)\n    for _iteration in range(n_iterations):\n        gradients = 2 / m * X_b.T.dot(X_b.dot(theta) - y)  # Вычисление градиента",
+        "detail": "l3.2",
+        "documentation": {}
+    },
+    {
+        "label": "g_X",
+        "kind": 5,
+        "importPath": "l3.2",
+        "description": "l3.2",
+        "peekOfCode": "g_X = 2 * np.random.rand(100, 1)\ng_y = 4 + 3 * g_X + np.random.randn(100, 1)\n# Градиентный спуск для простой линейной регрессии\ndef gradient_descent(X, y, learning_rate=0.1, n_iterations=1000):\n    m = len(y)\n    X_b = np.c_[\n        np.ones((m, 1)), X\n    ]  # Добавление вектора единиц для свободного члена (bias term)\n    theta = np.random.randn(\n        2, 1",
+        "detail": "l3.2",
+        "documentation": {}
+    },
+    {
+        "label": "g_y",
+        "kind": 5,
+        "importPath": "l3.2",
+        "description": "l3.2",
+        "peekOfCode": "g_y = 4 + 3 * g_X + np.random.randn(100, 1)\n# Градиентный спуск для простой линейной регрессии\ndef gradient_descent(X, y, learning_rate=0.1, n_iterations=1000):\n    m = len(y)\n    X_b = np.c_[\n        np.ones((m, 1)), X\n    ]  # Добавление вектора единиц для свободного члена (bias term)\n    theta = np.random.randn(\n        2, 1\n    )  # Инициализация случайных значений для коэффициентов (theta)",
+        "detail": "l3.2",
+        "documentation": {}
+    },
+    {
+        "label": "theta_final",
+        "kind": 5,
+        "importPath": "l3.2",
+        "description": "l3.2",
+        "peekOfCode": "theta_final = gradient_descent(g_X, g_y)\n# Прогнозирование с использованием полученных коэффициентов\nX_new = np.array([[0], [2]])\nX_new_b = np.c_[np.ones((2, 1)), X_new]  # Добавление вектора единиц для прогнозирования\ny_predict = X_new_b.dot(theta_final)\n# Визуализация\nplt.scatter(g_X, g_y, color=\"black\", label=\"Данные\")\nplt.plot(X_new, y_predict, color=\"red\", label=\"Градиентный спуск\")\nplt.xlabel(\"Признак X\")\nplt.ylabel(\"Значение Y\")",
+        "detail": "l3.2",
+        "documentation": {}
+    },
+    {
+        "label": "X_new",
+        "kind": 5,
+        "importPath": "l3.2",
+        "description": "l3.2",
+        "peekOfCode": "X_new = np.array([[0], [2]])\nX_new_b = np.c_[np.ones((2, 1)), X_new]  # Добавление вектора единиц для прогнозирования\ny_predict = X_new_b.dot(theta_final)\n# Визуализация\nplt.scatter(g_X, g_y, color=\"black\", label=\"Данные\")\nplt.plot(X_new, y_predict, color=\"red\", label=\"Градиентный спуск\")\nplt.xlabel(\"Признак X\")\nplt.ylabel(\"Значение Y\")\nplt.title(\"Линейная регрессия с использованием градиентного спуска\")\nplt.legend()",
+        "detail": "l3.2",
+        "documentation": {}
+    },
+    {
+        "label": "X_new_b",
+        "kind": 5,
+        "importPath": "l3.2",
+        "description": "l3.2",
+        "peekOfCode": "X_new_b = np.c_[np.ones((2, 1)), X_new]  # Добавление вектора единиц для прогнозирования\ny_predict = X_new_b.dot(theta_final)\n# Визуализация\nplt.scatter(g_X, g_y, color=\"black\", label=\"Данные\")\nplt.plot(X_new, y_predict, color=\"red\", label=\"Градиентный спуск\")\nplt.xlabel(\"Признак X\")\nplt.ylabel(\"Значение Y\")\nplt.title(\"Линейная регрессия с использованием градиентного спуска\")\nplt.legend()\nplt.show()",
+        "detail": "l3.2",
+        "documentation": {}
+    },
+    {
+        "label": "y_predict",
+        "kind": 5,
+        "importPath": "l3.2",
+        "description": "l3.2",
+        "peekOfCode": "y_predict = X_new_b.dot(theta_final)\n# Визуализация\nplt.scatter(g_X, g_y, color=\"black\", label=\"Данные\")\nplt.plot(X_new, y_predict, color=\"red\", label=\"Градиентный спуск\")\nplt.xlabel(\"Признак X\")\nplt.ylabel(\"Значение Y\")\nplt.title(\"Линейная регрессия с использованием градиентного спуска\")\nplt.legend()\nplt.show()\nprint(\"Коэффициенты после градиентного спуска:\", theta_final.ravel())",
+        "detail": "l3.2",
+        "documentation": {}
+    }
+]
