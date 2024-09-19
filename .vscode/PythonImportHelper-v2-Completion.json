@@ -8,6 +8,22 @@
         "documentation": {}
     },
     {
+        "label": "tree",
+        "importPath": "sklearn",
+        "description": "sklearn",
+        "isExtraImport": true,
+        "detail": "sklearn",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
         "label": "train_test_split",
         "importPath": "sklearn.model_selection",
         "description": "sklearn.model_selection",
@@ -128,6 +144,38 @@
         "documentation": {}
     },
     {
+        "label": "accuracy_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "classification_report",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "confusion_matrix",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "load_iris",
+        "importPath": "sklearn.datasets",
+        "description": "sklearn.datasets",
+        "isExtraImport": true,
+        "detail": "sklearn.datasets",
+        "documentation": {}
+    },
+    {
         "label": "load_iris",
         "importPath": "sklearn.datasets",
         "description": "sklearn.datasets",
@@ -159,6 +207,14 @@
         "importPath": "matplotlib.pyplot",
         "description": "matplotlib.pyplot",
         "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "DecisionTreeClassifier",
+        "importPath": "sklearn.tree",
+        "description": "sklearn.tree",
+        "isExtraImport": true,
+        "detail": "sklearn.tree",
         "documentation": {}
     },
     {
@@ -365,6 +421,33 @@
         "description": "l3.2",
         "peekOfCode": "y_predict = X_new_b.dot(theta_final)\n# Визуализация\nplt.scatter(g_X, g_y, color=\"black\", label=\"Данные\")\nplt.plot(X_new, y_predict, color=\"red\", label=\"Градиентный спуск\")\nplt.xlabel(\"Признак X\")\nplt.ylabel(\"Значение Y\")\nplt.title(\"Линейная регрессия с использованием градиентного спуска\")\nplt.legend()\nplt.show()\nprint(\"Коэффициенты после градиентного спуска:\", theta_final.ravel())",
         "detail": "l3.2",
+        "documentation": {}
+    },
+    {
+        "label": "iris",
+        "kind": 5,
+        "importPath": "l4.DT",
+        "description": "l4.DT",
+        "peekOfCode": "iris = load_iris()\nX, y = iris.data, iris.target\n# Разделение данных на обучающую и тестовую выборки\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# Создание и обучение модели дерева решений\ndt = DecisionTreeClassifier(max_depth=3)\ndt.fit(X_train, y_train)\n# Прогнозирование на тестовой выборке\ny_pred_dt = dt.predict(X_test)\n# Оценка модели",
+        "detail": "l4.DT",
+        "documentation": {}
+    },
+    {
+        "label": "dt",
+        "kind": 5,
+        "importPath": "l4.DT",
+        "description": "l4.DT",
+        "peekOfCode": "dt = DecisionTreeClassifier(max_depth=3)\ndt.fit(X_train, y_train)\n# Прогнозирование на тестовой выборке\ny_pred_dt = dt.predict(X_test)\n# Оценка модели\nprint(\"Decision Tree Accuracy:\", accuracy_score(y_test, y_pred_dt))\nprint(\"Classification Report:\\n\", classification_report(y_test, y_pred_dt))\nprint(\"Confusion Matrix:\\n\", confusion_matrix(y_test, y_pred_dt))\n# Визуализация дерева решений\nplt.figure(figsize=(12, 8))",
+        "detail": "l4.DT",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred_dt",
+        "kind": 5,
+        "importPath": "l4.DT",
+        "description": "l4.DT",
+        "peekOfCode": "y_pred_dt = dt.predict(X_test)\n# Оценка модели\nprint(\"Decision Tree Accuracy:\", accuracy_score(y_test, y_pred_dt))\nprint(\"Classification Report:\\n\", classification_report(y_test, y_pred_dt))\nprint(\"Confusion Matrix:\\n\", confusion_matrix(y_test, y_pred_dt))\n# Визуализация дерева решений\nplt.figure(figsize=(12, 8))\ntree.plot_tree(\n    dt, feature_names=iris.feature_names, class_names=iris.target_names, filled=True\n)",
+        "detail": "l4.DT",
         "documentation": {}
     },
     {
