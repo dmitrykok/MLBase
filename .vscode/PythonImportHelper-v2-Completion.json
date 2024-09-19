@@ -24,6 +24,14 @@
         "documentation": {}
     },
     {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
         "label": "LogisticRegression",
         "importPath": "sklearn.linear_model",
         "description": "sklearn.linear_model",
@@ -96,6 +104,38 @@
         "documentation": {}
     },
     {
+        "label": "accuracy_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "classification_report",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "confusion_matrix",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "load_iris",
+        "importPath": "sklearn.datasets",
+        "description": "sklearn.datasets",
+        "isExtraImport": true,
+        "detail": "sklearn.datasets",
+        "documentation": {}
+    },
+    {
         "label": "load_iris",
         "importPath": "sklearn.datasets",
         "description": "sklearn.datasets",
@@ -119,6 +159,14 @@
         "importPath": "matplotlib.pyplot",
         "description": "matplotlib.pyplot",
         "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "KNeighborsClassifier",
+        "importPath": "sklearn.neighbors",
+        "description": "sklearn.neighbors",
+        "isExtraImport": true,
+        "detail": "sklearn.neighbors",
         "documentation": {}
     },
     {
@@ -317,6 +365,33 @@
         "description": "l3.2",
         "peekOfCode": "y_predict = X_new_b.dot(theta_final)\n# Визуализация\nplt.scatter(g_X, g_y, color=\"black\", label=\"Данные\")\nplt.plot(X_new, y_predict, color=\"red\", label=\"Градиентный спуск\")\nplt.xlabel(\"Признак X\")\nplt.ylabel(\"Значение Y\")\nplt.title(\"Линейная регрессия с использованием градиентного спуска\")\nplt.legend()\nplt.show()\nprint(\"Коэффициенты после градиентного спуска:\", theta_final.ravel())",
         "detail": "l3.2",
+        "documentation": {}
+    },
+    {
+        "label": "iris",
+        "kind": 5,
+        "importPath": "l4.k-NN",
+        "description": "l4.k-NN",
+        "peekOfCode": "iris = load_iris()\nX, y = iris.data, iris.target\n# Разделение данных на обучающую и тестовую выборки\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# Создание и обучение модели k-NN (k=3)\nknn = KNeighborsClassifier(n_neighbors=3)\nknn.fit(X_train, y_train)\n# Прогнозирование на тестовой выборке\ny_pred_knn = knn.predict(X_test)\n# Оценка модели",
+        "detail": "l4.k-NN",
+        "documentation": {}
+    },
+    {
+        "label": "knn",
+        "kind": 5,
+        "importPath": "l4.k-NN",
+        "description": "l4.k-NN",
+        "peekOfCode": "knn = KNeighborsClassifier(n_neighbors=3)\nknn.fit(X_train, y_train)\n# Прогнозирование на тестовой выборке\ny_pred_knn = knn.predict(X_test)\n# Оценка модели\nprint(\"k-NN Accuracy:\", accuracy_score(y_test, y_pred_knn))\nprint(\"Classification Report:\\n\", classification_report(y_test, y_pred_knn))\nprint(\"Confusion Matrix:\\n\", confusion_matrix(y_test, y_pred_knn))",
+        "detail": "l4.k-NN",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred_knn",
+        "kind": 5,
+        "importPath": "l4.k-NN",
+        "description": "l4.k-NN",
+        "peekOfCode": "y_pred_knn = knn.predict(X_test)\n# Оценка модели\nprint(\"k-NN Accuracy:\", accuracy_score(y_test, y_pred_knn))\nprint(\"Classification Report:\\n\", classification_report(y_test, y_pred_knn))\nprint(\"Confusion Matrix:\\n\", confusion_matrix(y_test, y_pred_knn))",
+        "detail": "l4.k-NN",
         "documentation": {}
     }
 ]
