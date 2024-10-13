@@ -455,7 +455,7 @@
         "kind": 5,
         "importPath": "code.l4.k-NN",
         "description": "code.l4.k-NN",
-        "peekOfCode": "iris = load_iris()\nX, y = iris.data, iris.target\n# Разделение данных на обучающую и тестовую выборки\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# Создание и обучение модели k-NN (k=3)\nknn = KNeighborsClassifier(n_neighbors=3)\nknn.fit(X_train, y_train)\n# Прогнозирование на тестовой выборке\ny_pred_knn = knn.predict(X_test)\n# Оценка модели",
+        "peekOfCode": "iris = load_iris()\nX, y = iris.data, iris.target\n# Разделение данных на обучающую и тестовую выборки\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, random_state=42\n)\n# Создание и обучение модели k-NN (k=3)\nknn = KNeighborsClassifier(n_neighbors=3)\nknn.fit(X_train, y_train)\n# Прогнозирование на тестовой выборке",
         "detail": "code.l4.k-NN",
         "documentation": {}
     },
